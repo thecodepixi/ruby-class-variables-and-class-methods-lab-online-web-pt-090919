@@ -11,6 +11,8 @@ class Song
     @@genres << genre 
     @@artists << artist
     @name = name 
+    @artist = artist 
+    @genre = genre 
   end 
   
   def genres 
