@@ -3,6 +3,8 @@ class Song
   attr_accessor :name, :artist, :genre 
   
   @@count = 0 
+  @@genres = [] 
+  @@artists = [] 
   
   def initialize(name, artist, genre)
     @@count += 1 
@@ -12,11 +14,16 @@ class Song
   end 
   
   def genres 
-    @@genres = [] 
+    genres_without_dupes = []
+    @@genres.each do |genre|
+      if !genres_without_dupes.include?(genre)
+        genres_without_dupes << genre 
+      end 
+    genres_without_dupes 
   end 
   
   def artists
-    @@artists = [] 
+   
   end 
   
   def genre_count 
