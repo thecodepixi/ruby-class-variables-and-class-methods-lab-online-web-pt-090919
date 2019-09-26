@@ -19,6 +19,7 @@ class Song
       if !genres_without_dupes.include?(genre)
         genres_without_dupes << genre 
       end 
+    end 
     genres_without_dupes 
   end 
   
@@ -28,6 +29,7 @@ class Song
       if !artists_without_dupes.include?(artist)
         artists_without_dupes << genre 
       end 
+    end 
     artists_without_dupes 
   end 
   
