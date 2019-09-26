@@ -42,7 +42,7 @@ class Song
   
   def self.genre_count 
     self.each do |song|
-      
+      binding.pry 
     end 
   end 
   
