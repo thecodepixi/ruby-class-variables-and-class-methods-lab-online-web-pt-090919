@@ -15,6 +15,10 @@ class Song
     @genre = genre 
   end 
   
+  def count 
+    @@count 
+  end 
+  
   def genres 
     genres_without_dupes = []
     @@genres.each do |genre|
