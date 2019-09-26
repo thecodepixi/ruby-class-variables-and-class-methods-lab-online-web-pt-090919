@@ -19,7 +19,7 @@ class Song
     @@count 
   end 
   
-  def genres 
+  def self.genres 
     genres_without_dupes = []
     @@genres.each do |genre|
       if !genres_without_dupes.include?(genre)
@@ -29,8 +29,14 @@ class Song
     genres_without_dupes 
   end 
   
-  def artists
-   
+  def self.artists
+   artists_without_dupes = []
+    @@artists.each do |artist|
+      if !artists_without_dupes.include?(artist)
+        artists_without_dupes << artist 
+      end 
+    end 
+    artists_without_dupes 
   end 
   
   def genre_count 
